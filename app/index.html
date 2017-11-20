@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" ng-app="app">
     <head>
         <title>CRM</title>
         <meta charset="UTF-8">
+        <base href="/">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-    
+        <nav class="navbar navbar-light bg-light">
+            <a href="#" class="navbar-brand">CRM</a>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2 bg-dark sidebar">
+                    <ul class="nav flex-column mt-3">
+                        <li class="nav-item"><a class="nav-link" ui-sref="clients">Clients</a></li>
+                        <li class="nav-item"><a class="nav-link" ui-sref="companies">Companies</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-10">
+                    <div class="row m-3">
+                        <ui-view></ui-view>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
