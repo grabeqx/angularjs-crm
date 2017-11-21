@@ -7,7 +7,7 @@ const clientsModule = angular.module('clientsModule', ['ui.router'])
                 url: '/',
                 template: require('./clients.html'),
                 controller: clientsController,
-                controllerAs: 'clients'
+                controllerAs: 'clientsCtrl'
             });
     });
 

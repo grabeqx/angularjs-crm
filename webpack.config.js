@@ -27,6 +27,8 @@ module.exports = {
         }),
         new webpack.optimize.CommonsChunkPlugin({
             name: "vendor",
+            filename: "vendor.js",
+            children: true,
             minChunks: Infinity
         }),
         new webpack.HotModuleReplacementPlugin(),
