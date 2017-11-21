@@ -1,9 +1,11 @@
 import clientsModule from './components/clients/clients.module';
 import companiesModule from './components/companies/companies.module';
+import clientModule from './components/client/client.module';
 
 const modules = [
     clientsModule.name,
-    companiesModule.name
+    companiesModule.name,
+    clientModule.name
 ];
 
 const dependencies = [
@@ -12,6 +14,6 @@ const dependencies = [
 
 angular.module('app',[...dependencies, ...modules])
     .config(function($urlRouterProvider, $locationProvider) {
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/clients/');
         $locationProvider.html5Mode(true);
     });
