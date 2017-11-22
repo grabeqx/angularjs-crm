@@ -34,7 +34,7 @@
 </div>
 <div class="row mt-5">
     <div class="row w-100 d-flex justify-content-end mb-2">
-        <a ui-sref="client({id:1})" class="btn btn-primary">Add</a>
+        <a ui-sref="client({id:0})" class="btn btn-primary">Add</a>
     </div>
     <table class="table text-center">
         <thead>
@@ -47,49 +47,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Marcin Grabowski</td>
-                <td>Pureweb</td>
-                <td>office@pureweb.pl</td>
+            <tr ng-repeat="client in clientsCtrl.clients">
+                <td>{{ client.id }}</td>
+                <td>{{ client.first_name }} {{ client.last_name }}</td>
+                <td>{{ client.company }}</td>
+                <td>{{ client.email }}</td>
                 <td>
-                    <a href="#" class="btn btn-primary">Edit</a>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Marcin Grabowski</td>
-                <td>Pureweb</td>
-                <td>office@pureweb.pl</td>
-                <td>
-                    <a href="#" class="btn btn-primary">Edit</a>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Marcin Grabowski</td>
-                <td>Pureweb</td>
-                <td>office@pureweb.pl</td>
-                <td>
-                    <a href="#" class="btn btn-primary">Edit</a>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Marcin Grabowski</td>
-                <td>Pureweb</td>
-                <td>office@pureweb.pl</td>
-                <td>
-                    <a href="#" class="btn btn-primary">Edit</a>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Marcin Grabowski</td>
-                <td>Pureweb</td>
-                <td>office@pureweb.pl</td>
-                <td>
-                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a ui-sref="client({id: client.id})" class="btn btn-primary">Edit</a>
                 </td>
             </tr>
         </tbody>

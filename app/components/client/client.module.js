@@ -1,4 +1,5 @@
 import clientController from './client.controller';
+import dataService from '../../shared/dataService';
 
 const clientModule = angular.module('clientModule', ['ui.router'])
     .config(function($stateProvider) {
@@ -9,6 +10,7 @@ const clientModule = angular.module('clientModule', ['ui.router'])
                 controller: clientController,
                 controllerAs: 'clientCtrl'
             });
-    });
+    })
+    .service('dataService', dataService);
 
 export default clientModule;

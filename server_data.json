@@ -478,21 +478,25 @@
             "id": 1,
             "history": [
                 {
+                    "title": "First meeting",
                     "date": "20-01-2017",
                     "type": "phone",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
                 },
-                {
+                {   
+                    "title": "Sec meeting",
                     "date": "20-02-2017",
                     "type": "phone",
-                    "text": "oLorem ipsum dolor sit amet, consectetur adipiscing elitd"
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elitd"
                 },
                 {
+                    "title": "Lorem ipsum",
                     "date": "20-03-2017",
                     "type": "mail",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
                 },
                 {
+                    "title": "Lorem ipsum",
                     "date": "20-04-2017",
                     "type": "phone",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu"
@@ -502,22 +506,20 @@
         {
             "id": 4,
             "history": [
-                {
-                    "date": "20-01-2017",
-                    "type": "phone",
-                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
-                },
-                {
+                {   
+                    "title": "Sec meeting",
                     "date": "20-02-2017",
                     "type": "phone",
-                    "text": "oLorem ipsum dolor sit amet, consectetur adipiscing elitd"
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elitd"
                 },
                 {
+                    "title": "Lorem ipsum",
                     "date": "20-03-2017",
                     "type": "mail",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"
                 },
                 {
+                    "title": "Lorem ipsum",
                     "date": "20-04-2017",
                     "type": "phone",
                     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu"

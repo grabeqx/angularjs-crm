@@ -1,7 +1,10 @@
-
 class clientsController {
-    constructor() {
-
+    constructor(dataService) {
+        this.clients = [];
+        dataService.getClients()
+            .then(data => {
+                this.clients = data;
+            });
     }
 }
 

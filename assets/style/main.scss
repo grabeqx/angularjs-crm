@@ -7,9 +7,19 @@
         color: #fff;
     }
 }
-.ng-scope {
-    box-sizing: border-box;
-    width: 100%;
+.content {
     margin: 0px;
-    padding: 0px;
+    & > div {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0px;
+    }
+}
+.history {
+    .phone-type {
+        background: #f9efff;
+    }
+    .email-type {
+        background: #f6fff2;
+    }
 }
