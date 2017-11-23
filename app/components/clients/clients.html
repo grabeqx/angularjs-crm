@@ -6,26 +6,26 @@
         <div class="row">
             <div class="col">
                 <label>Name:</label>
-                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" placeholder="Name" ng-model="clientsCtrl.search.first_name">
             </div>
             <div class="col">
                 <label>Company:</label>
-                <input type="text" class="form-control" placeholder="Company">
+                <input type="text" class="form-control" placeholder="Company" ng-model="clientsCtrl.search.company">
             </div>
             <div class="col pt-1">
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="gender" value="female"> Female
+                        <input type="radio" class="form-check-input" name="gender" value="" ng-model="clientsCtrl.search.gender"> All
                     </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="gender" value="male"> Male
+                        <input type="radio" class="form-check-input" name="gender" value="Female" ng-model="clientsCtrl.search.gender"> Female
                     </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="gender" value="none"> None
+                        <input type="radio" class="form-check-input" name="gender" value="Male" ng-model="clientsCtrl.search.gender"> Male
                     </label>
                 </div>
             </div>
@@ -41,15 +41,17 @@
             <tr>
                 <th scope="col">id</th>
                 <th scope="col">Name</th>
+                <th scope="col">Gender</th>                
                 <th scope="col">Company</th>
                 <th scope="col">E-mail</th>
                 <th scope="col">Edit</th>
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat="client in clientsCtrl.clients">
+            <tr ng-repeat="client in clientsCtrl.clients | filter:clientsCtrl.search">
                 <td>{{ client.id }}</td>
                 <td>{{ client.first_name }} {{ client.last_name }}</td>
+                <td>{{ client.gender }}</td>
                 <td>{{ client.company }}</td>
                 <td>{{ client.email }}</td>
                 <td>

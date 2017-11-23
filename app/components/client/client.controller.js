@@ -11,8 +11,11 @@ class clientController {
         dataService.getHistory(this.id)
             .then(data => {
                 this.history = data;
-            })
+            });
     }
+
+    
+
 }
 
 export default clientController;

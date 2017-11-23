@@ -1,5 +1,6 @@
 import clientController from './client.controller';
 import dataService from '../../shared/dataService';
+import { customDate } from '../../shared/filters';
 
 const clientModule = angular.module('clientModule', ['ui.router'])
     .config(function($stateProvider) {
@@ -11,6 +12,7 @@ const clientModule = angular.module('clientModule', ['ui.router'])
                 controllerAs: 'clientCtrl'
             });
     })
-    .service('dataService', dataService);
+    .service('dataService', dataService)
+    .filter('customDate', customDate);
 
 export default clientModule;

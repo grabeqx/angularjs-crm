@@ -7,14 +7,13 @@ class dataService {
         return this.$http.get('http://localhost:3001/clients')
             .then(response => response.data);
     }
-    
     getClient(id) {
         return this.$http.get(`http://localhost:3001/clients/${id}`)
-            .then(response => response.data)
+            .then(response => response.data, reason => {})
     }
     getHistory(id) {
         return this.$http.get(`http://localhost:3001/history/${id}`)
-            .then(response => response.data.history)
+            .then(response => response.data.history, reason => [])
     }
 
 }

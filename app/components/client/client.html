@@ -58,7 +58,7 @@
         </form>
         <div class="history">
             <ul class="list-group">
-                <li class="history-item list-group-item phone-type" ng-repeat="point in clientCtrl.history">
+                <li class="history-item list-group-item" ng-repeat="point in clientCtrl.history" ng-class="point.type + '-type'">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">{{ point.title }}</h5>
                         <small>{{ point.date }}</small>
