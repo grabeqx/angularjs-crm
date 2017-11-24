@@ -1,11 +1,13 @@
 import clientsModule from './components/clients/clients.module';
 import companiesModule from './components/companies/companies.module';
 import clientModule from './components/client/client.module';
+import historyStep from './directives/history-step/history-step';
 
 const modules = [
     clientsModule.name,
     companiesModule.name,
-    clientModule.name
+    clientModule.name,
+    historyStep.name
 ];
 
 const dependencies = [
