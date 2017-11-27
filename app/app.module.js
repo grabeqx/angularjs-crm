@@ -14,8 +14,10 @@ const dependencies = [
     'ui.router'
 ];
 
-angular.module('app',[...dependencies, ...modules])
+const app = angular.module('app',[...dependencies, ...modules])
     .config(function($urlRouterProvider, $locationProvider) {
         $urlRouterProvider.otherwise('/clients/');
         $locationProvider.html5Mode(true);
     });
+
+export default app;
